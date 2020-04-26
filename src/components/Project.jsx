@@ -17,10 +17,12 @@ const Project = ({ selectedSkills, project, handleClickSkill }) => {
     <div className="project-card">
       <div className="project-image-container hide-before-mobile">
         <div className="project-image-container">
-          <img
-            className="project-image"
-            src={process.env.PUBLIC_URL + `../images/${project.image}.jpg`}
-          />
+          <a href={project.github} target="_blank" >
+            <img
+              className="project-image"
+              src={process.env.PUBLIC_URL + `../images/${project.image}.jpg`}
+            />
+          </a>
         </div>
       </div>
       <div className="project-details">
