@@ -18,6 +18,14 @@ Salmon + tetradic complementary colors:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active {
+  text-decoration: none;
 }
 
 ::selection {
