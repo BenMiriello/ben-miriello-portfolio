@@ -49,7 +49,6 @@ const App = () => {
 
   return (
     <>
-      <p>aaaa</p>
       <Headline />
       <Section title="About Me" narrow>
         <p>{content.aboutMe1}</p><br />
