@@ -1,7 +1,7 @@
 export default {
   tagline: "Software Engineer & Web Developer",
   aboutMe:
-    "This is the part that's about me. What does someone need to know 'about me' if it's got to fit in one paragraph? All that goes right here. Everything else to the back of the line. Gotta wait for later.",
+    "I am a Web App Developer in React and Rails looking for Full Stack Engineer positions in New York City. While I had my Web Development training at Flatiron School in 2019-2020, my journey in coding goes back much further.\n\nBefore coding I studied physics, first being captivated by the process of deriving short but universally applicable equations that bring deeper understanding of our world. After experimenting with hobby electronics I discovered that I also loved finding efficient solutions to coding problems. I'm driven to always seek better understanding of how the tools I'm using work under the hood, and how they can be used more effectively. My life experience has also taught me how to get an MVP together fast and refine it later.\n\nI have strong communication, leadership, teaching, and learning skills from my time as a sales department leader and as a performer and musician. I take pride in writing great code and coming up with innovative solutions. I strive to cultivate clear communication and a sense of shared vision which are essential ingredients for a successful team.",
   skillset: [
     "Javascript",
     "React",
