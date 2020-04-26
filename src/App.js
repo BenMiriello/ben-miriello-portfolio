@@ -49,9 +49,12 @@ const App = () => {
 
   return (
     <>
+      <p>aaaa</p>
       <Headline />
       <Section title="About Me" narrow>
-        <p>{content.aboutMe}</p>
+        <p>{content.aboutMe1}</p><br />
+        <p>{content.aboutMe2}</p><br />
+        <p>{content.aboutMe3}</p>
       </Section>
       <Section title="Skills" skills>
         {content.skillset.map((name) => (
