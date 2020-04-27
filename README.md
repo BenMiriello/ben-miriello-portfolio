@@ -67,3 +67,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+
+
+<!-- package.json scripts -->
+
+<!--  HEROKU *
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+ -->
+
+ <!-- LOCAL *
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+  -->
