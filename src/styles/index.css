@@ -397,7 +397,7 @@ p {
   margin-bottom: 12px;
   width: 40px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
@@ -431,6 +431,10 @@ p {
     3px 3px 3px #d5d7da, -3px -3px 3px #ffffff;
   border-width: 0px;
   transition: box-shadow 0.2s;
+}
+
+.project-external-link-button:hover {
+  background-color: #fff;
 }
 
 .project-external-link-button:active {

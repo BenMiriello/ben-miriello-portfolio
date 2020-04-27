@@ -55,18 +55,15 @@ const App = () => {
         <p>{content.aboutMe2}</p><br />
         <p>{content.aboutMe3}</p>
       </Section>
-      <Section title="Skills" skills>
+      <Section title="Projects">
         {content.skillset.map((name) => (
           <Skill
-            key={name}
-            name={name}
-            onClick={handleClickSkill}
-            // selectedSkills={selectedSkills}
-            selected={selectedSkills.includes(name) ? true : false}
+          key={name}
+          name={name}
+          onClick={handleClickSkill}
+          selected={selectedSkills.includes(name) ? true : false}
           />
         ))}
-      </Section>
-      <Section title="Projects">
         {projects().map((project) => (
           <Project
             key={project.name}
