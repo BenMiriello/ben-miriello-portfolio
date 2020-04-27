@@ -19,12 +19,11 @@ import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
 import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
 
-const Icon = (props) => {
-  const { iconName, className, selected, inProject, handleClickSkill } = props;
+const Icon = ({ name, className, selected, inProject, handleClick }) => {
   let Icon = null;
 
   if (!!selected) {
-    switch(iconName){
+    switch(name){
       case 'Javascript': Icon = JSColor; break;
       case 'React': Icon = ReactColor; break;
       case 'Redux': Icon = ReduxColor; break;
@@ -36,7 +35,7 @@ const Icon = (props) => {
       case 'SQLite3': Icon = SQLite3Color; break;
     }
   } else {
-    switch(iconName){
+    switch(name){
       case 'Javascript': Icon = JSBW; break;
       case 'React': Icon = ReactBW; break;
       case 'Redux': Icon = ReduxBW; break;
@@ -49,20 +48,19 @@ const Icon = (props) => {
     }
   }
 
-  let buttonClass = "project-icon-button"
+  if (!Icon) return null
   
+  if (className === 'skill-icon') {
+    return <Icon className="skill-icon" />
+  }
+  
+  let buttonClass = "project-icon-button"
   if (selected && inProject) {
     buttonClass ="project-icon-button selected-project-tech"
   }
 
-  if (!Icon) return null
-
-  if (className === 'skill-icon') {
-    return <Icon className="skill-icon" />
-  }
-
   return (
-    <div className={buttonClass} onClick={handleClickSkill}>
+    <div className={buttonClass} onClick={selected ? () => handleClick(name) : null}>
       <div className="project-icon-container">
         <Icon />
       </div>

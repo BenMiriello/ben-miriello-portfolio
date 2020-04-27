@@ -1,26 +1,20 @@
 import React, { useState } from "react";
 import Icon from "./Icon";
 
-const Skill = ({ name, onClick, selectedSkills }) => {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(!clicked);
-    onClick(name);
-  };
+const Skill = ({ name, onClick, selected }) => {
 
   let showIcon = () => {
-    if (selectedSkills.includes(name)) {
-      return <Icon iconName={name} className={"skill-icon"} selected />;
+    if (selected) {
+      return <Icon name={name} className={"skill-icon"} selected />;
     } else {
-      return <Icon iconName={name} className={"skill-icon"} />;
+      return <Icon name={name} className={"skill-icon"} />;
     }
   }
 
   return (
     <li
-      className={!clicked ? "skill" : "skill-clicked"}
-      onClick={() => handleClick()}
+      className={selected ? "skill-clicked" : "skill"}
+      onClick={() => onClick(name)}
     >
       <div className="skill-name-container">
         <span>

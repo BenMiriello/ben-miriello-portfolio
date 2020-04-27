@@ -61,7 +61,8 @@ const App = () => {
             key={name}
             name={name}
             onClick={handleClickSkill}
-            selectedSkills={selectedSkills}
+            // selectedSkills={selectedSkills}
+            selected={selectedSkills.includes(name) ? true : false}
           />
         ))}
       </Section>
@@ -70,7 +71,7 @@ const App = () => {
           <Project
             key={project.name}
             project={project}
-            onClick={handleClickSkill}
+            handleClickTech={handleClickSkill}
             selectedSkills={selectedSkills}
           />
         ))}

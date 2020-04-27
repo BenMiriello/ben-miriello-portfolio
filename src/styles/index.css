@@ -26,6 +26,7 @@ Salmon + tetradic complementary colors:
 *:hover,
 *:active {
   text-decoration: none;
+  color: #333;
 }
 
 ::selection {
@@ -258,15 +259,13 @@ p {
 
 .skill {
   display: inline-block;
-  margin: 9px;
+  margin: 8px 4px 7px 8px;
   border-radius: 20px;
-  /* border-style: solid;
-  border-color: #f3f5f7;
-  border-width: 1px; */
-  box-shadow: inset 2px 2px 2px #ffffff, inset -2px -2px 2px #d5d7da,
+  box-shadow: 
+    inset 2px 2px 2px #ffffff, inset -2px -2px 2px #d5d7da,
     5px 5px 5px #d5d7da, -5px -5px 5px #ffffff;
-  -webkit-transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
-  transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
   cursor: default;
   font-weight: 400;
   font-size: 93%;
@@ -274,16 +273,19 @@ p {
 
 .skill-clicked {
   display: inline-block;
-  margin: 5px 7px;
+  margin: 6px 5px;
   border-radius: 20px;
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
-  box-shadow: inset 5px 5px 5px #d5d7da, inset -5px -5px 5px #ffffff,
+  box-shadow: 
+    inset 5px 5px 5px #d5d7da, inset -5px -5px 5px #ffffff,
     2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
-  -webkit-transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
-  transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
+  -webkit-transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
   cursor: default;
+  font-weight: 400;
+  font-size: 93%;
 }
 
 .skill:hover,
