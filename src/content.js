@@ -26,6 +26,7 @@ export default {
       description:
         "Search for flights and view the cheapest offers and the latest price. Built with React and Rails.",
       github: "https://github.com/BenMiriello/flight-finder-api",
+      video: "https://www.youtube.com/watch?v=Px8IAOQFDKc",
       technologies: [
         "React",
         "Redux",
@@ -52,6 +53,7 @@ export default {
       description:
         "Web App providing tickets to the solar system with realistic orbital transfer windows and travel times.",
       github: "https://github.com/BenMiriello/planet-express",
+      video: "https://www.youtube.com/watch?v=Kogxr-Shwss",
       technologies: [
         "Javascript",
         "Rails",
@@ -69,6 +71,7 @@ export default {
       description:
         "A twitter-like social media site based on the subreddit of the same name. Built fully in Rails.",
       github: "https://github.com/BenMiriello/Shower-Thoughts",
+      video: "https://www.youtube.com/watch?v=JR47A5nyjGI",
       technologies: [
         "Rails",
         "Ruby",

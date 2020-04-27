@@ -19,7 +19,35 @@ import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
 import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
 
-const Icon = ({ name, className, selected, inProject, handleClick }) => {
+import { ReactComponent as Github } from '../icons/github.svg';
+import { ReactComponent as Youtube } from '../icons/youtube-bw.svg';
+
+const Icon = ({ name, className, selected, inProject, handleClick, github, video }) => {
+  
+  if (github) {
+    return(
+      <a href={github} target="_blank" className={""}>
+        <div className={"project-icon-button link-button project-external-link-button"} onClick={null}>
+          <div className="project-icon-container">
+              <Github />
+          </div>
+        </div>
+      </a>
+    )
+  }
+
+  if (video) {
+    return(
+      <a href={video} target="_blank">
+        <div className={"project-icon-button link-button project-external-link-button"} onClick={null}>
+          <div className="project-icon-container">
+              <Youtube />
+          </div>
+        </div>
+      </a>
+    )
+  }
+
   let Icon = null;
 
   if (!!selected) {

@@ -5,7 +5,6 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
   const technologies = () => {
     return project.technologies.map((name) => {
       if (selectedSkills.includes(name)) {
-        // console.log(handleClick)
         return <Icon name={name} handleClick={handleClickTech} selected inProject />;
       }
       return <Icon name={name} />;
@@ -14,7 +13,7 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
 
   return (
     <div className="project-card">
-      <a href={project.github} target="_blank">
+      
         <div className="project-image-container hide-before-mobile">
           <div className="project-image-container">
             <img
@@ -23,11 +22,12 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
             />
           </div>
         </div>
-      </a>
       <div className="project-details">
-        <a href={project.github} target="_blank">
-          <h3>{project.name}</h3>
-        </a>
+          <div className="project-header">
+            <h3>{project.name}</h3>
+            <Icon github={project.github} />
+            <Icon video={project.video} />
+          </div>
         <p className="project-description">{project.description}</p>
         <div>{technologies()}</div>
       </div>

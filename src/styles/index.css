@@ -128,6 +128,7 @@ h2:after {
 
 h3 {
   text-align: left;
+  float: left;
 }
 
 p {
@@ -246,7 +247,7 @@ p {
 .skills {
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -367,13 +368,20 @@ p {
   box-shadow: 4px 4px 4px #d5d7da, -4px -4px 4px #ffffff;
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  cursor: pointer;
 }
 
 .project-details {
   margin: auto;
   margin-left: 20px;
   padding: 10px;
+}
+
+.project-header {
+  height: 55px
+}
+
+.project-header h3 {
+  margin: 10px;
 }
 
 .project-description {
@@ -395,8 +403,8 @@ p {
   border-width: 1px;
   box-shadow: inset 4px 4px 4px #d5d7da, inset -4px -4px 4px #ffffff,
     2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
-  -webkit-transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
 
 .project-icon-container {
@@ -409,4 +417,25 @@ p {
   box-shadow: inset 5px 5px 5px #ffffff, inset -5px -5px 5px #d5d7da,
     3px 3px 3px #d5d7da, -3px -3px 3px #ffffff;
   border-width: 0px;
+}
+
+.link-button {
+  border-radius: 20px;
+  text-align: right;
+  float: right;
+  margin: 5px;
+}
+
+.project-external-link-button {
+  box-shadow: inset 5px 5px 5px #ffffff, inset -5px -5px 5px #d5d7da,
+    3px 3px 3px #d5d7da, -3px -3px 3px #ffffff;
+  border-width: 0px;
+  transition: box-shadow 0.2s;
+}
+
+.project-external-link-button:active {
+  box-shadow: inset 4px 4px 4px #d5d7da, inset -4px -4px 4px #ffffff,
+    2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
