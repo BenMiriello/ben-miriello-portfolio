@@ -35,21 +35,24 @@ const ExternalLink = ({ type, link }) => {
   switch (type) {
     case "Linkedin":
       destination = "https://www.linkedin.com/in/benmiriello";
-      image = process.env.PUBLIC_URL + "./images/external-links/linkedin.png";
+      image = "./images/external-links/linkedin.png";
       break;
     case "Medium":
       destination = "https://medium.com/@benmiriello_36460";
-      image = process.env.PUBLIC_URL + "./images/external-links/medium.png";
+      image = "./images/external-links/medium.png";
       break;
     case "Twitter":
       destination = "https://twitter.com/ManateeIdol";
-      image = process.env.PUBLIC_URL + "./images/external-links/twitter.png";
+      image = "./images/external-links/twitter.png";
       break;
+    case "Github":
+      destination = "https://github.com/BenMiriello/";
+      image = "./images/external-links/Github.png"
   }
 
   return (
     <a href={destination} target="_blank">
-      <img src={image} alt={type} className="external-link-image" />
+      <img src={process.env.PUBLIC_URL + image} alt={type} className="external-link-image" />
     </a>
   );
 };

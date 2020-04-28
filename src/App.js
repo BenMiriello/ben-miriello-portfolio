@@ -4,6 +4,7 @@ import Section from "./components/Section";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
 import content from "./content";
+import MediumProfile from "react-medium-profile";
 
 const App = () => {
   const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails']);
@@ -74,6 +75,11 @@ const App = () => {
             selectedSkills={selectedSkills}
           />
         ))}
+      </Section>
+      <Section title="Blogs">
+        <div className="medium-section">
+          <MediumProfile username={"benmiriello_36460"} />
+        </div>
       </Section>
     </>
   );

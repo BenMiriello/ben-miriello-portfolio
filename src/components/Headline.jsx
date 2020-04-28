@@ -15,6 +15,7 @@ const Headline = _ => {
         <p>{content.tagline}</p>
         <div className="contact-container">
           <ExternalLink type="Linkedin" />
+          <ExternalLink type="Github" />
           <ExternalLink type="Medium" />
           <ExternalLink type="Twitter" />
           <ExternalLink type="Email" />
