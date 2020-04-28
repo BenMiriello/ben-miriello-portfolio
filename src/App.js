@@ -55,7 +55,7 @@ const App = () => {
         <p>{content.aboutMe2}</p><br />
         <p>{content.aboutMe3}</p>
       </Section>
-      <Section title="Projects">
+      <Section title="Skills" narrow >
         {content.skillset.map((name) => (
           <Skill
           key={name}
@@ -64,6 +64,8 @@ const App = () => {
           selected={selectedSkills.includes(name) ? true : false}
           />
         ))}
+      </Section>
+      <Section title="Projects">
         {projects().map((project) => (
           <Project
             key={project.name}

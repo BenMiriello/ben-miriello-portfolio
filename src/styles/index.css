@@ -446,14 +446,14 @@ p {
   border-width: 0px;
 }
 
-.link-button {
+/* .link-button {
   border-radius: 20px;
   text-align: right;
   float: right;
   margin: 5px;
-}
+} */
 
-.external-link-button {
+/* .external-link-button {
   box-shadow: inset 5px 5px 5px #ffffff, inset -5px -5px 5px #d5d7da,
     3px 3px 3px #d5d7da, -3px -3px 3px #ffffff;
   border-width: 0px;
@@ -469,4 +469,14 @@ p {
     2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
+} */
+
+.project-external-link {
+  float: right;
+}
+
+.external-link-image {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
 }

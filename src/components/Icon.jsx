@@ -19,19 +19,17 @@ import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
 import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
 
-import { ReactComponent as Github } from '../icons/github.svg';
-import { ReactComponent as Youtube } from '../icons/youtube-bw.svg';
+// import { ReactComponent as Github } from '../icons/github.svg';
+// import { ReactComponent as Youtube } from '../icons/youtube.svg';
 
 const Icon = ({ name, className, selected, inProject, handleClick, github, video }) => {
   
   if (github) {
     return(
       <a href={github} target="_blank">
-        <div className={"project-icon-button link-button external-link-button"} onClick={null}>
-          <div className="project-icon-container">
-              <Github />
-          </div>
-        </div>
+        <img src="../icons/external-links/github.png" className="project-external-link-container" />
+          {/* <Github />
+        </div> */}
       </a>
     )
   }
@@ -39,10 +37,8 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
   if (video) {
     return(
       <a href={video} target="_blank">
-        <div className={"project-icon-button link-button external-link-button"} onClick={null}>
-          <div className="project-icon-container">
-              <Youtube />
-          </div>
+        <div className="project-external-link-container">
+          {/* <Youtube /> */}
         </div>
       </a>
     )

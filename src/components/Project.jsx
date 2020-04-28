@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "./Icon";
+import ExternalLink from './ExternalLink';
 
 const Project = ({ selectedSkills, project, handleClickTech }) => {
   const technologies = () => {
@@ -24,8 +25,8 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
       <div className="project-details">
           <div className="project-header">
             <h3>{project.name}</h3>
-            <Icon github={project.github} />
-            <Icon video={project.video} />
+            <ExternalLink type="Github" link={project.github} />
+            <ExternalLink type="YouTube" link={project.video} />
           </div>
         <p className="project-description">{project.description}</p>
         <div>{technologies()}</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from './Contact';
+import ExternalLink from './ExternalLink';
 import content from "../content";
 
 const Headline = _ => {
@@ -14,10 +14,10 @@ const Headline = _ => {
         <h1>Ben Miriello</h1>
         <p>{content.tagline}</p>
         <div className="contact-container">
-          <Contact type="Linkedin" />
-          <Contact type="Medium" />
-          <Contact type="Twitter" />
-          <Contact type="Email" />
+          <ExternalLink type="Linkedin" />
+          <ExternalLink type="Medium" />
+          <ExternalLink type="Twitter" />
+          <ExternalLink type="Email" />
         </div>
       </div>
     </div>
