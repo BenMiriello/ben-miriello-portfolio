@@ -193,7 +193,7 @@ p {
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 3px;
-  box-shadow: 8px 8px 8px #d5d7da, -8px -8px 8px #ffffff;
+  box-shadow: 12px 12px 12px #abadb1, -12px -12px 12px #ffffff;
   margin: auto;
 }
 
@@ -212,6 +212,7 @@ p {
 .headline-text {
   min-width: 250px;
   margin: auto;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -228,17 +229,43 @@ p {
     margin-bottom: 20px;
   }
 
-  @media only screen and (max-width: 480px) {
-    .headshot {
-      width: 45vw;
-      min-width: 0px;
-    }
-  }
-
   .headline-text {
     margin-top: 40px, auto;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .headshot {
+    width: 45vw;
+    min-width: 200px;
+  }
+}
+
+.contact-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-button {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cursor-copy {
+  cursor: copy;
+}
+
+/* .contact-icon-container {
+  width: 44px;
+  height: 44px;
+  margin: auto;
+  margin-top: 3px;
+} */
 
 /* ------------------------------------------------------------ */
 /* SKILLS */
@@ -426,18 +453,18 @@ p {
   margin: 5px;
 }
 
-.project-external-link-button {
+.external-link-button {
   box-shadow: inset 5px 5px 5px #ffffff, inset -5px -5px 5px #d5d7da,
     3px 3px 3px #d5d7da, -3px -3px 3px #ffffff;
   border-width: 0px;
   transition: box-shadow 0.2s;
 }
 
-.project-external-link-button:hover {
+.external-link-button:hover {
   background-color: #fff;
 }
 
-.project-external-link-button:active {
+.external-link-button:active {
   box-shadow: inset 4px 4px 4px #d5d7da, inset -4px -4px 4px #ffffff,
     2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
   -webkit-transition: box-shadow 0.2s;

@@ -1,8 +1,8 @@
 import React from "react";
-
+import Contact from './Contact';
 import content from "../content";
 
-const Headline = (props) => {
+const Headline = _ => {
   return (
     <div className="main-section headline">
       <img
@@ -13,6 +13,12 @@ const Headline = (props) => {
       <div className="headline-text">
         <h1>Ben Miriello</h1>
         <p>{content.tagline}</p>
+        <div className="contact-container">
+          <Contact type="Linkedin" />
+          <Contact type="Medium" />
+          <Contact type="Twitter" />
+          <Contact type="Email" />
+        </div>
       </div>
     </div>
   );

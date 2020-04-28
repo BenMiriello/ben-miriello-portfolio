@@ -26,8 +26,8 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
   
   if (github) {
     return(
-      <a href={github} target="_blank" className={""}>
-        <div className={"project-icon-button link-button project-external-link-button"} onClick={null}>
+      <a href={github} target="_blank">
+        <div className={"project-icon-button link-button external-link-button"} onClick={null}>
           <div className="project-icon-container">
               <Github />
           </div>
@@ -39,7 +39,7 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
   if (video) {
     return(
       <a href={video} target="_blank">
-        <div className={"project-icon-button link-button project-external-link-button"} onClick={null}>
+        <div className={"project-icon-button link-button external-link-button"} onClick={null}>
           <div className="project-icon-container">
               <Youtube />
           </div>

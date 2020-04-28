@@ -6,7 +6,7 @@ import Project from "./components/Project";
 import content from "./content";
 
 const App = () => {
-  const [selectedSkills, setSelectedSkills] = useState([]);
+  const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails']);
 
   const handleClickSkill = (clicked) => {
     if (selectedSkills.includes(clicked)) {
