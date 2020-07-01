@@ -16,6 +16,7 @@ export default {
     "SQLite3",
     "CSS3",
     "HTML5",
+    // "Typescript",
     // "React Native",
     // "SQLite3",
   ],
