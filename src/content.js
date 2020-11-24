@@ -40,7 +40,7 @@ export default {
         // 'Thunk',
         // 'Semantic UI',
         // 'Cometari API',
-        // 'Bcrypt',
+        // 'Bcrypt',`
         // 'JWT',
         // 'Active Model',
         // 'Spawnling',
