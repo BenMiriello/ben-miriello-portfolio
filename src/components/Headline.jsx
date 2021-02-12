@@ -17,7 +17,7 @@ const Headline = _ => {
           <ExternalLink type="Linkedin" />
           <ExternalLink type="Github" />
           <ExternalLink type="Medium" />
-          <ExternalLink type="Twitter" />
+          {/* <ExternalLink type="Twitter" /> */}
           <ExternalLink type="Email" />
         </div>
       </div>

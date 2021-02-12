@@ -6,7 +6,7 @@ import Project from "./components/Project";
 import content from "./content";
 import MediumProfile from "react-medium-profile";
 
-import './tailwind.output.css';
+// import './tailwind.output.css';
 
 const App = () => {
   const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails']);
