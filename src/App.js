@@ -54,9 +54,12 @@ const App = () => {
     <>
       <Headline />
       <Section title="About Me" narrow>
-        <p>{content.aboutMe1}</p><br />
-        <p>{content.aboutMe2}</p><br />
-        <p>{content.aboutMe3}</p>
+        {content.aboutMe.map((paragraph, i) => (
+          <>
+            <p>{paragraph}</p>
+            {content.aboutMe.length > (i + 1) ? <br /> : ''}
+          </>
+        ))}
       </Section>
       <Section title="Skills" narrow >
         {content.skillset.map((name) => (
