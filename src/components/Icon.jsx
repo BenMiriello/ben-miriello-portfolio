@@ -8,6 +8,7 @@ import { ReactComponent as PGColor } from "../icons/postgresql.svg";
 import { ReactComponent as CSS3Color } from "../icons/css3.svg";
 import { ReactComponent as HTML5Color } from "../icons/html5.svg";
 import { ReactComponent as SQLite3Color } from "../icons/sqlite3.svg";
+import { ReactComponent as TypescriptColor } from "../icons/typescript.svg";
 
 import { ReactComponent as JSBW } from "../icons/javascript-bw.svg";
 import { ReactComponent as ReactBW } from "../icons/react-bw.svg";
@@ -18,6 +19,7 @@ import { ReactComponent as PGBW } from "../icons/postgresql-bw.svg";
 import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
 import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
+import { ReactComponent as TypescriptBW } from "../icons/typescript-bw.svg";
 
 // import { ReactComponent as Github } from '../icons/github.svg';
 // import { ReactComponent as Youtube } from '../icons/youtube.svg';
@@ -57,6 +59,7 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
       case 'CSS3': Icon = CSS3Color; break;
       case 'HTML5': Icon = HTML5Color; break;
       case 'SQLite3': Icon = SQLite3Color; break;
+      case 'Typescript': Icon = TypescriptColor; break;
     }
   } else {
     switch(name){
@@ -69,6 +72,7 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
       case 'CSS3': Icon = CSS3BW; break;
       case 'HTML5': Icon = HTML5BW; break;
       case 'SQLite3': Icon = SQLite3BW; break;
+      case 'Typescript': Icon = TypescriptBW; break;
     }
   }
 

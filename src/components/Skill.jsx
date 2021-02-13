@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Icon from "./Icon";
 
 const Skill = ({ name, onClick, selected }) => {
@@ -17,7 +17,7 @@ const Skill = ({ name, onClick, selected }) => {
       onClick={() => onClick(name)}
     >
       <div className="skill-name-container">
-        <span>
+        <span className='skill-span'>
           {showIcon()}
           {name}
         </span>

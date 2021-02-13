@@ -2,9 +2,9 @@ export default {
   tagline: "Software Engineer & Web Developer",
   aboutMe1:
     "I am a Web App Developer in React and Rails looking for Full Stack Engineer positions in New York City. While I had my Web Development training at Flatiron School in 2019-2020, my journey in coding goes back much further.",
-  aboutMe2: 
+  aboutMe2:
     "Before I started coding I was drawn to physics and the process of deriving short but universally applicable equations that bring deeper understanding of our world. After experimenting with hobby electronics I discovered that I also loved finding efficient solutions to coding problems. I'm driven to always seek better understanding of how the tools I'm using work under the hood, and how they can be used more effectively. My life experience has also taught me how to get an MVP together fast and refine it later.",
-  aboutMe3: 
+  aboutMe3:
     "I have strong communication, leadership, teaching, and learning skills from my time as a sales department leader and as a performer and musician. I take pride in writing great code and coming up with innovative solutions. I strive to cultivate clear communication and a sense of shared vision which are essential ingredients for a successful team.",
   skillset: [
     "Javascript",
@@ -12,15 +12,35 @@ export default {
     "Redux",
     "Ruby",
     "Rails",
+    "Typescript",
     "PostgreSQL",
     "SQLite3",
     "CSS3",
     "HTML5",
-    // "Typescript",
     // "React Native",
     // "SQLite3",
   ],
   projects: [
+    {
+      name: "Grab a Meeting",
+      image: "grab-a-meeting",
+      description:
+        "A community hub and video meeting platform where people in recovery from addiction find and host meetings.",
+      // github: '',
+      // video: '',
+      technologies: [
+        "React",
+        "Rails",
+        "Javascript",
+        'Typescript',
+        "Ruby",
+        "CSS3",
+        "HTML5",
+        "PostgreSQL",
+        "TailwindCSS",
+      ],
+      priority: 0,
+    },
     {
       name: "Flight Finder",
       image: "flight-finder",
@@ -46,7 +66,7 @@ export default {
         // 'Spawnling',
         // 'Amadeus API',
       ],
-      priority: 0,
+      priority: 1,
     },
     {
       name: "Planet Express",
@@ -64,7 +84,7 @@ export default {
         "HTML5",
         // 'Active Model'
       ],
-      priority: 1,
+      priority: 2,
     },
     {
       name: "Shower Thoughts",
@@ -76,13 +96,12 @@ export default {
       technologies: [
         "Rails",
         "Ruby",
-        'SQLite3',
+        "SQLite3",
         "CSS3",
         "HTML5",
         // 'ActiveRecord',
       ],
-      priority: 2,
+      priority: 3,
     },
   ],
 };
-

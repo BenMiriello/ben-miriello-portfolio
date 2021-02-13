@@ -9,7 +9,7 @@ import MediumProfile from "react-medium-profile";
 // import './tailwind.output.css';
 
 const App = () => {
-  const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails']);
+  const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails', 'Typescript', 'Ruby', 'CSS3']);
 
   const handleClickSkill = (clicked) => {
     if (selectedSkills.includes(clicked)) {

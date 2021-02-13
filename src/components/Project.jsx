@@ -23,11 +23,11 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
         </div>
       </div>
       <div className="project-details">
-          <div className="project-header">
-            <h3>{project.name}</h3>
-            <ExternalLink type="Github" link={project.github} />
-            <ExternalLink type="YouTube" link={project.video} />
-          </div>
+        <div className="project-header">
+          <h3>{project.name}</h3>
+          {project.github && <ExternalLink type="Github" link={project.github} />}
+          {project.video && <ExternalLink type="YouTube" link={project.video} />}
+        </div>
         <p className="project-description">{project.description}</p>
         <div>{technologies()}</div>
       </div>
