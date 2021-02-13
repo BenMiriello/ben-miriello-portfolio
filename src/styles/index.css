@@ -520,6 +520,32 @@ p {
   float: right;
 }
 
+.pxl-link-to {
+  border-radius: 1rem;
+  box-shadow: inset 2px 2px 2px #ffffff, inset -2px -2px 2px #d5d7da,
+    3px 3px 3px #d1d3d4, -3px -3px 3px #ffffff;
+  border-color: rgb(250, 250, 250);
+  background: #f2f5f7;
+  padding-left: 18px;
+  padding-bottom: 3px;
+  margin-right: 6px;
+}
+
+.pxl-link-to:active {
+  box-shadow: 
+  inset 3px 3px 3px #d5d7da, inset -3px -3px 3px #ffffff,
+  2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
+  -webkit-transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.go-to-site {
+  padding-right: 0.75rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
 .external-link-image {
   width: 40px;
   height: 40px;

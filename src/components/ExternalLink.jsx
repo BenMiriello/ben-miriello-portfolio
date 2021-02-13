@@ -1,11 +1,13 @@
 import React from "react";
 
+import { ReactComponent as RightArrow } from "../icons/arrow-right.svg";
+
 const ExternalLink = ({ type, link }) => {
   if (link) {
     return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="project-external-link">
+      <a href={link} target="_blank" rel="noopener noreferrer" className={type === 'linkTo' ? "project-external-link pxl-link-to" : "project-external-link"}>
         {type === 'linkTo' ?
-          <div style={{paddingRight: '0.75rem'}}>Go to Site</div> :
+          <div className='go-to-site'>Visit<RightArrow height='0.8rem' style={{marginLeft: '4px'}}/></div> :
           <img
             alt={type} 
             className="external-link-image"
