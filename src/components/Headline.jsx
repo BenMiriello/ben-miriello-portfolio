@@ -5,9 +5,14 @@ import content from "../content";
 const Headline = _ => {
   return (
     <div className="main-section headline">
-      <img
+      {/* <img
         className="headshot"
         src={process.env.PUBLIC_URL + "./images/portrait.jpg"}
+        alt="Headshot"
+      /> */}
+      <img
+        className="headshot-2"
+        src={process.env.PUBLIC_URL + "./images/portrait-3.png"}
         alt="Headshot"
       />
       <div className="headline-text">

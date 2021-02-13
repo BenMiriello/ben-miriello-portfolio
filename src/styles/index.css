@@ -178,7 +178,7 @@ p {
 .headline {
   width: 85%;
   margin: auto;
-  height: 250px;
+  /* height: 250px;  wasn't working with new headshot image size and setup */
   display: grid;
   grid-template-columns: auto auto;
   max-width: 850px;
@@ -197,6 +197,13 @@ p {
   margin: auto;
 }
 
+.headshot-2 {
+  width: 400px;
+  max-width: 80vw;
+  border-radius: 200px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 480px) {
   .headline {
     width: 80vw;
@@ -212,8 +219,11 @@ p {
 .headline-text {
   min-width: 250px;
   margin: auto;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; removed to work better with new portrait */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 540px) {
