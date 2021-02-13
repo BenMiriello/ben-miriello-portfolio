@@ -139,6 +139,9 @@ p {
 .narrow {
   margin: auto;
   width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hide-in-mobile {
