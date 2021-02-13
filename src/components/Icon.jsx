@@ -82,9 +82,9 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
     return <Icon className="skill-icon" />
   }
   
-  let buttonClass = "project-icon-button"
+  let buttonClass = "project-icon-button selected-project-tech"
   if (selected && inProject) {
-    buttonClass ="project-icon-button selected-project-tech"
+    buttonClass ="project-icon-button"
   }
 
   return (
