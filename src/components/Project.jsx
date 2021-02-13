@@ -8,7 +8,7 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
       if (selectedSkills.includes(name)) {
         return <Icon name={name} handleClick={handleClickTech} selected inProject />;
       }
-      return <Icon name={name} />;
+      return <Icon name={name} handleClick={handleClickTech} inProject />;
     });
   };
 

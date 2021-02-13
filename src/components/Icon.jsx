@@ -88,7 +88,7 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
   }
 
   return (
-    <div className={buttonClass} onClick={selected ? () => handleClick(name) : null}>
+    <div className={buttonClass} onClick={() => handleClick(name)}>
       <div className="project-icon-container">
         <Icon />
       </div>
