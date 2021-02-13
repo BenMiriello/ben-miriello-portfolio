@@ -10,6 +10,7 @@ import MediumProfile from "react-medium-profile";
 
 const App = () => {
   const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails', 'Typescript', 'Ruby', 'CSS3']);
+  const [highlightedProjects, setHighlightedProjects] = useState(['Grab a Meeting']);
 
   const handleClickSkill = (clicked) => {
     if (selectedSkills.includes(clicked)) {
@@ -78,6 +79,7 @@ const App = () => {
             project={project}
             handleClickTech={handleClickSkill}
             selectedSkills={selectedSkills}
+            highlighted={highlightedProjects.includes(project.name)}
           />
         ))}
       </Section>

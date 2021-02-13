@@ -386,7 +386,13 @@ p {
   overflow: auto;
   display: grid;
   grid-template-columns: auto auto;
+  overflow: hidden;
 }
+
+.project-card-highlighted {
+  box-shadow: 2px 4px 12px #ffbca1, -2px -4px 12px #ffcfbb;
+  /* -webkit-transition: box-shadow 0.2s; */
+};
 
 @media only screen and (max-width: 480px) {
   .project-card {
@@ -439,6 +445,16 @@ p {
 .project-header h3 {
   margin: 10px;
 }
+
+/* .project-header h3:after {
+  display: block;
+  height: 1px;
+  background-color: #7998e0;
+  content: "";
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 3px;
+} */
 
 .project-description {
   font-size: 90%;

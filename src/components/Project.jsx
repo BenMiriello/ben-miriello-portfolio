@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "./Icon";
 import ExternalLink from './ExternalLink';
 
-const Project = ({ selectedSkills, project, handleClickTech }) => {
+const Project = ({ selectedSkills, project, handleClickTech, highlighted }) => {
   const technologies = () => {
     return project.technologies.map((name) => {
       if (selectedSkills.includes(name)) {
@@ -13,7 +13,7 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
   };
 
   return (
-    <div className="project-card">
+    <div className={highlighted ? "project-card project-card-highlighted" : "project-card"}>
       <div className="project-image-container hide-before-mobile">
         <div className="project-image-container">
           <img
