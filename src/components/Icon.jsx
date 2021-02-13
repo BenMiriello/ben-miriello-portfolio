@@ -29,7 +29,7 @@ const Icon = ({ name, className, selected, inProject, handleClick, github, video
   if (github) {
     return(
       <a href={github} target="_blank">
-        <img src="../icons/external-links/github.png" className="project-external-link-container" />
+        <img src="../icons/external-links/github.png" rel="noopener noreferrer" alt='github' className="project-external-link-container" />
           {/* <Github />
         </div> */}
       </a>

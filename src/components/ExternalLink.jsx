@@ -3,15 +3,18 @@ import React from "react";
 const ExternalLink = ({ type, link }) => {
   if (link) {
     return (
-      <a href={link} target="_blank" className="project-external-link">
-        <img 
-          alt={type} 
-          className="external-link-image"
-          src={process.env.PUBLIC_URL + `./images/external-links/${type}.png`}
-        />
+      <a href={link} target="_blank" rel="noopener noreferrer" className="project-external-link">
+        {type === 'linkTo' ?
+          <div style={{paddingRight: '0.75rem'}}>Go to Site</div> :
+          <img
+            alt={type} 
+            className="external-link-image"
+            src={process.env.PUBLIC_URL + `./images/external-links/${type}.png`}
+          />
+        }
       </a>
     )
-  }
+  };
 
   let image = "";
   let destination = "";
@@ -30,7 +33,8 @@ const ExternalLink = ({ type, link }) => {
         />
       </div>
     );
-  }
+  };
+
 
   switch (type) {
     case "Linkedin":
@@ -47,11 +51,14 @@ const ExternalLink = ({ type, link }) => {
       break;
     case "Github":
       destination = "https://github.com/BenMiriello/";
-      image = "./images/external-links/Github.png"
-  }
+      image = "./images/external-links/Github.png";
+      break;
+    default:
+      break;
+  };
 
   return (
-    <a href={destination} target="_blank">
+    <a href={destination} target="_blank" rel="noopener noreferrer">
       <img src={process.env.PUBLIC_URL + image} alt={type} className="external-link-image" />
     </a>
   );

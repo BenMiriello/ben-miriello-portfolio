@@ -410,7 +410,16 @@ p {
 }
 
 .project-header {
-  height: 55px
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-header-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .project-header h3 {

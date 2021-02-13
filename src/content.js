@@ -25,7 +25,8 @@ export default {
       name: "Grab a Meeting",
       image: "grab-a-meeting",
       description:
-        "A community hub and video meeting platform where people in recovery from addiction find and host meetings.",
+        "A video meeting platform where people in recovery from addiction find and host meetings.",
+      linkTo: 'http://www.grabameeting.com',
       // github: '',
       // video: '',
       technologies: [

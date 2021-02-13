@@ -25,8 +25,11 @@ const Project = ({ selectedSkills, project, handleClickTech }) => {
       <div className="project-details">
         <div className="project-header">
           <h3>{project.name}</h3>
-          {project.github && <ExternalLink type="Github" link={project.github} />}
-          {project.video && <ExternalLink type="YouTube" link={project.video} />}
+          <div className='project-header-links'>
+            {project.linkTo && <ExternalLink type='linkTo' link={project.linkTo} />}
+            {project.github && <ExternalLink type="Github" link={project.github} />}
+            {project.video && <ExternalLink type="YouTube" link={project.video} />}
+          </div>
         </div>
         <p className="project-description">{project.description}</p>
         <div>{technologies()}</div>
