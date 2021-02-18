@@ -9,7 +9,7 @@ import MediumProfile from "react-medium-profile";
 // import './tailwind.output.css';
 
 const App = () => {
-  const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails', 'Typescript', 'Ruby', 'CSS3']);
+  const [selectedSkills, setSelectedSkills] = useState(['Javascript', 'React', 'Rails', 'Typescript', 'Ruby', 'CSS3', 'SQLite3', 'HTML5', 'PostgreSQL', 'Redux']);
   const [highlightedProjects, setHighlightedProjects] = useState(['Grab a Meeting']);
 
   const handleClickSkill = (clicked) => {
