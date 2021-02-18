@@ -206,6 +206,7 @@ p {
   max-width: 80vw;
   border-radius: 200px;
   margin: auto;
+  /* filter: drop-shadow(5px 10px 4px #ffbca1); */
 }
 
 @media only screen and (max-width: 480px) {
@@ -349,6 +350,7 @@ p {
 }
 
 .skill-name-container {
+  cursor: pointer;
   margin: 13px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -390,7 +392,7 @@ p {
 }
 
 .project-card-highlighted {
-  box-shadow: 2px 4px 12px #ffbca1, -2px -4px 12px #ffcfbb;
+  box-shadow: 2px 4px 12px #fcc4ad, -2px -4px 12px #fdd6c4;
   /* -webkit-transition: box-shadow 0.2s; */
 };
 
@@ -463,6 +465,7 @@ p {
 }
 
 .project-icon-button {
+  cursor: pointer;
   float: left;
   margin-left: 6px;
   margin-right: 6px;
